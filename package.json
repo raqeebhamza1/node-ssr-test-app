@@ -1,0 +1,17 @@
+{
+  "name": "node-ssr-test-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "build": "echo 'No build step required for this app'"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ejs": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
