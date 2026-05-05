@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Cloudways SSR Test App',
+    title: 'Cloudways SSR Test App v2',
     nodeVersion: process.version,
     port: PORT,
     env: process.env.NODE_ENV || 'development',
