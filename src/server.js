@@ -10,6 +10,10 @@ app.set('views', path.join(__dirname, '../views'));
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/', (req, res) => {
+  console.log(
+    '[node-ssr-test-app] Main page hit — staging log marker: orange-mango-bicycle-4281',
+    { path: req.path, ip: req.ip }
+  );
   res.render('index', {
     title: 'Cloudways SSR Test App v2',
     nodeVersion: process.version,
